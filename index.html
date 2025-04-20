@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex Retro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="siteTitle">POKEDEX RETRO</h1>
+      <button id="inicioBtn">CLEAR</button>
+    </header>
+    <div id="startOverlay" class="overlay">
+      <div class="overlay-content">
+        <p>🎮 PRESIONA START PARA INICIAR TU AVENTURA</p>
+        <button id="startButton">START</button>
+      </div>
+    </div>
+
+    <main class="main-layout">
+      <aside id="sidebar" class="sidebar"></aside>
+
+      <section class="content">
+        <section class="filter">
+          <label for="pokemonFilter">Filtrar por Pokémon:</label>
+          <select id="pokemonFilter">
+            <option value="all">Todos</option>
+          </select>
+        </section>
+
+        <section id="cardsContainer" class="cards-grid"></section>
+      </section>
+    </main>
+
+    <footer>
+      <p>HECHO POR ANA PEREZ Y JOSE BUITRAGO | PokeAPI 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <audio
+      id="bg-music"
+      src="https://cdn.glitch.me/54054e8a-791d-4c0d-8cab-cb4ce8857e19/Chill%20%26%20Relaxing%20Pok%C3%A9mon%20Music%20Mix.mp3?v=1745126027646"
+      autoplay
+      loop
+      hidden
+    ></audio>
+  </body>
+</html>
